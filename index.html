@@ -18,7 +18,7 @@
                 <div class="stats shadow">
                     <div class="stat">
                         <div class="stat-title text-black">Available Balance</div>
-                        <div class="stat-value">89,400</div>
+                        <div id="account-balance"  class="stat-value">9400</div>
 
                     </div>
                 </div>
@@ -34,6 +34,18 @@
                             <button id="btn-add-money" type="submit" class="btn btn-neutral mt-4">Add Money</button>
                         </form>
                     </div>
+
+                    <!-- case out form -->
+                      <div class="card-body">
+                        <form class="form">
+                            <label class="label">Amount</label>
+                            <input id="input-case-out" type="text" class="input" placeholder="Amount" required />
+
+                            <label class="label">4 Digit Pin</label>
+                            <input id="input-case-out-pin" type="password" class="input" placeholder="Password" required />
+                            <button id="btn-caus-out" type="submit" class="btn btn-neutral mt-4">Case Out</button>
+                        </form>
+                    </div>
                 </div>
 
             </div>
@@ -42,6 +54,7 @@
     </main>
     <script src="./js/utilleise.js"></script>
     <script src="./js/add.js"></script>
+    <script src="./js/caseout.js"></script>
 </body>
 
 </html>
