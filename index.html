@@ -18,13 +18,23 @@
                 <div class="stats shadow">
                     <div class="stat">
                         <div class="stat-title text-black">Available Balance</div>
-                        <div id="account-balance"  class="stat-value">9400</div>
+                        <div id="account-balance" class="stat-value">9400</div>
 
                     </div>
                 </div>
                 <div class="divider"></div>
-                <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
-                    <div class="card-body">
+                <!-- button start-->
+                <div>
+                    <button id="show-add-money-form" class="btn btn-lg">Add Money</button>
+                    <button id="show-caus-money-form" class="btn btn-lg">Caus Money</button>
+                    <button id="show-transaction-section" class="btn btn-lg">transaction</button>
+                </div>
+                <!-- button end -->
+
+
+                <div class="  card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                    <!-- add money -->
+                    <div id="add-money-form" class="card-body hidden">
                         <form class="form">
                             <label class="label">Amount</label>
                             <input id="input-amount" type="text" class="input" placeholder="Amount" required />
@@ -36,16 +46,22 @@
                     </div>
 
                     <!-- case out form -->
-                      <div class="card-body">
+                    <div id="caus-out-form" class="card-body">
                         <form class="form">
                             <label class="label">Amount</label>
                             <input id="input-case-out" type="text" class="input" placeholder="Amount" required />
 
                             <label class="label">4 Digit Pin</label>
-                            <input id="input-case-out-pin" type="password" class="input" placeholder="Password" required />
+                            <input id="input-case-out-pin" type="password" class="input" placeholder="Password"
+                                required />
                             <button id="btn-caus-out" type="submit" class="btn btn-neutral mt-4">Case Out</button>
                         </form>
                     </div>
+
+                </div>
+                <!-- transaction start -->
+                <div id="transaction-section">
+                    <h2 class="text-5xl text-center">transaction History</h2>
                 </div>
 
             </div>
@@ -55,6 +71,7 @@
     <script src="./js/utilleise.js"></script>
     <script src="./js/add.js"></script>
     <script src="./js/caseout.js"></script>
+    <script src="js/features.js"></script>
 </body>
 
 </html>
